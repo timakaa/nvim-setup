@@ -14,7 +14,6 @@ return {
           "StatusLineNC",
           "EndOfBuffer",
           "WinSeparator",
-          "NvimTreeNormal",
           "NvimTreeEndOfBuffer",
           "BufferLineFill",
           "BufferLineBackground",

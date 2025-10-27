@@ -19,7 +19,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Enable true color support
 vim.o.termguicolors = true
 vim.o.winblend = 20    -- transparency level for windows and floating popups
-vim.o.pumblend = 20    -- transparency level for popup menus
+vim.o.pumblend = 0    -- transparency level for popup menus
 
 -- Set background transparent for all splits and UI
 vim.cmd [[
