@@ -19,9 +19,9 @@ return {
           "BufferLineBackground",
           "BufferLineSeparator",
           "CursorLine",
-          "ColorColumn",
+          -- "ColorColumn",
           "FoldColumn",
-          "IndentBlanklineChar",
+          -- "IndentBlanklineChar",
       },
       exclude = {},
     })

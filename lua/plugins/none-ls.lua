@@ -29,23 +29,6 @@ return {
           "markdown",
         },
       },
-      -- Set linters
-      null_ls.builtins.diagnostics.eslint_d.with {
-        filetypes = {
-          "javascript",
-          "javascriptreact", 
-          "typescript",
-          "typescriptreact",
-        },
-      },
-      null_ls.builtins.code_actions.eslint_d.with {
-        filetypes = {
-          "javascript",
-          "javascriptreact",
-          "typescript", 
-          "typescriptreact",
-        },
-      },
     })
   end,
 }

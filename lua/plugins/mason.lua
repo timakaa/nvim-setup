@@ -16,12 +16,6 @@ return {
         -- install formatters
         "stylua",
         "prettier", -- JavaScript/TypeScript/JSX/TSX formatter
-        
-        -- install linters
-        "eslint_d", -- Fast ESLint daemon
-        
-        -- install debuggers
-        "debugpy",
 
         -- install any other package
         "tree-sitter-cli",
