@@ -13,6 +13,26 @@ return {
     -- add any opts here
     -- this file can contain specific instructions for your project
     instructions_file = "avante.md",
+    -- Enable transparency support
+    behaviour = {
+      auto_suggestions = false,
+      auto_set_highlight_group = false,
+    },
+    windows = {
+      position = "right",
+      wrap = true,
+      width = 30,
+      sidebar_header = {
+        align = "center",
+        rounded = true,
+      },
+    },
+    highlights = {
+      diff = {
+        current = "DiffText",
+        incoming = "DiffAdd",
+      },
+    },
     -- for example
     provider = "gemini",
     providers = {
