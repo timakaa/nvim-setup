@@ -7,6 +7,10 @@ return {
         visible = true,       -- Show filtered items like dotfiles
         hide_dotfiles = false -- Do not hide dotfiles
       },
+      follow_current_file = {
+        enabled = true,
+        leave_dirs_open = false,
+      },
       components = {
         -- Custom component to show line count
         line_count = function(config, node, state)
