@@ -43,13 +43,22 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "pyright",
       "clangd",
       "ts_ls", -- TypeScript/JavaScript language server
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
+      pyright = {
+        settings = {
+          python = {
+            analysis = {
+              typeCheckingMode = "basic",  -- or "off", "basic", "strict" depending on preference
+            },
+          },
+        },
+      },
       clangd = {
         capabilities = { offsetEncoding = "utf-8" },
         init_options = {
