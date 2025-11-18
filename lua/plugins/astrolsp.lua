@@ -26,6 +26,7 @@ return {
           "typescriptreact",
           "json",
           "jsonc",
+          "cpp",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -43,12 +44,18 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "clangd",
       "ts_ls", -- TypeScript/JavaScript language server
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = {
+        capabilities = { offsetEncoding = "utf-8" },
+        init_options = {
+          fallbackFlags = { "--std=c++23" },
+        },
+      },
       ts_ls = {
         settings = {
           typescript = {

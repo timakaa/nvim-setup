@@ -16,19 +16,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
--- Enable true color support
-vim.o.termguicolors = true
-vim.o.winblend = 20    -- transparency level for windows and floating popups
-vim.o.pumblend = 0    -- transparency level for popup menus
-
--- Set background transparent for all splits and UI
-vim.cmd [[
-  highlight Normal guibg=NONE ctermbg=NONE
-  highlight NonText guibg=NONE ctermbg=NONE
-  highlight NormalFloat guibg=NONE ctermbg=NONE
-  highlight Pmenu guibg=NONE ctermbg=NONE
-]]
-
 -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore
