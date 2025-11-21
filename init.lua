@@ -15,7 +15,14 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-
+vim.opt.wrap = true
+-- vim.diagnostic.config({
+--   virtual_text = false,  -- disable inline text
+--   float = {
+--     border = "rounded",
+--     wrap = true,          -- allows line wrapping
+--   },
+-- })
 -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore

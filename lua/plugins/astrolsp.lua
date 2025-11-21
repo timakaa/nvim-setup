@@ -62,7 +62,7 @@ return {
       clangd = {
         capabilities = { offsetEncoding = "utf-8" },
         init_options = {
-          fallbackFlags = { "--std=c++23" },
+          fallbackFlags = { "--std=c++17" },
         },
       },
       ts_ls = {
